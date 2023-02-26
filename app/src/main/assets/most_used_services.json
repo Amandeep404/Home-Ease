@@ -1,0 +1,64 @@
+{
+    "services": [
+        {
+            "title": "Plumbing",
+            "icon": "https://img.icons8.com/color/512/piping.png"
+        },
+        {
+            "title": "Repairing",
+            "icon": "https://img.icons8.com/external-kosonicon-solid-kosonicon/512/external-repairing-data-analysis-kosonicon-solid-kosonicon.png"
+        },
+        {
+            "title": "Electrical",
+            "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/512/external-electrician-professions-woman-diversity-flaticons-flat-flat-icons.png"
+        },
+        {
+            "title": "Cleaning",
+            "icon": "https://img.icons8.com/fluency/512/cleaning-service.png"
+        },
+        {
+            "title": "Carpentry",
+            "icon": "https://img.icons8.com/external-others-iconmarket/512/external-carpentry-labor-day-others-iconmarket-8.png"
+
+        },
+        {
+            "title": "Painting",
+            "icon": "https://img.icons8.com/color/512/painting-a-wall.png"
+
+        },
+        {
+            "title": "Movers",
+            "icon": "https://img.icons8.com/color/512/movers.png"
+
+        },
+        {
+            "title": "Handy",
+            "icon": "https://img.icons8.com/ios/512/joiner.png"
+
+        },
+        {
+            "title": "Priest",
+            "icon": "https://img.icons8.com/external-justicon-lineal-color-justicon/512/external-priest-st-patricks-day-justicon-lineal-color-justicon-1.png"
+
+        }
+    ],
+    "puja_services": [
+        {
+            "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/256/external-ganesha-religion-flaticons-lineal-color-flat-icons.png",
+            "title": "Ganesh Puja"
+        },
+        {
+            "icon": "https://img.icons8.com/external-smashingstocks-circular-smashing-stocks/256/external-puja-raksha-bandhan-smashingstocks-circular-smashing-stocks.png",
+            "title": "Durga Puja"
+        },
+        {
+            "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/256/external-hinduism-religion-flaticons-flat-flat-icons-2.png",
+            "title": "Saraswati Puja"
+        },
+        {
+            "icon": "https://img.icons8.com/external-smashingstocks-thin-outline-color-smashing-stocks/256/external-holi-party-and-celebrations-smashingstocks-thin-outline-color-smashing-stocks.png",
+            "title": "Holi Puja"
+        }
+    ]
+
+}

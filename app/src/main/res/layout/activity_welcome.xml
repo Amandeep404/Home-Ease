@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <!--view pager for displaying our slides-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/idViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <!--on below line we are creating
+         a simple linear layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <!--adding linear layout for
+            creating dots view-->
+
+        <TextView
+            android:id="@+id/tvSliderHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need a handyman for those DIY tasks around the house?"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_blue"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingVertical="7dp"
+            />
+
+        <TextView
+            android:id="@+id/tvSliderSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let us take care of all your home service needs..
+From plumbing to electrical, we've got you covered."
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/idLLDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!--on below line we are creating a text view
+                 for displaying our dots-->
+            <TextView
+                android:id="@+id/idTVSlideOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="•"
+                android:textAlignment="center"
+                android:textColor="@color/text_blue"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <!--on below line we are creating a text view
+                 for displaying our dots-->
+            <TextView
+                android:id="@+id/idTVSlideTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="•"
+                android:textAlignment="center"
+                android:textColor="@color/text_grey"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <!--on below line we are creating a text view
+                for displaying our dots-->
+            <TextView
+                android:id="@+id/idTVSlideThree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="•"
+                android:textAlignment="center"
+                android:textColor="@color/text_grey"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--button for skipping our intro slider-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/idBtnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:backgroundTint="@color/text_blue"
+            android:padding="12dp"
+            app:cornerRadius="20dp"
+            android:text="Next"
+            android:layout_marginBottom="30dp"
+            android:layout_marginHorizontal="50dp"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

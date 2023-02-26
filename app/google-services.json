@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "899726248072",
+    "project_id": "homeease-3683a",
+    "storage_bucket": "homeease-3683a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899726248072:android:e4c10fd2c43bafd5e3f73d",
+        "android_client_info": {
+          "package_name": "com.example.homeease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899726248072-hjodqncjb82ggctocer4os9q16nqh29t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.homeease",
+            "certificate_hash": "445c692a9f77044c236deaa514e88c40f3a48a14"
+          }
+        },
+        {
+          "client_id": "899726248072-ev0au2fko5o2q8c8e50j254tuvfi9le0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6MmzHCj0fh7LSpVgv88j2GhgEsRj-Y1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899726248072-ev0au2fko5o2q8c8e50j254tuvfi9le0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

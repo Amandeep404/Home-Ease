@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Home Ease</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guidelines">By Continuing you may receive an SMS for verification message and data rates may apply.</string>
+    <string name="about_our_company">Welcome to Yellow Gloves, your one-stop shop for all your home service needs! We understand how difficult it can be to juggle a busy schedule and keep up with home maintenance and repairs.That is why we offer a wide range of services to help you keep your home in top shape, from plumbing and electrical work to cleaning and handyman services.
+    </string>
+
+    <string name="Rs">\u20B91200</string>
+</resources>

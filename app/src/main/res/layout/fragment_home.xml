@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/orange_curved_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Hey"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tvUserNameOnTop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="there 👋"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="start"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+            />
+<!--
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/menu_option_vertical"
+            android:backgroundTint="@color/white"
+            android:layout_marginRight="5dp"
+
+            />
+-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/llTop"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What Service do \n you need?"
+            android:paddingStart="20dp"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+<!--
+    <SearchView
+        android:id="@+id/svHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sv_bg"
+        android:queryHint="Search.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llTop" />-->
+
+    <LinearLayout
+        android:id="@+id/llServicesSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/ivHomeScreenBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="NotSibling">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivHomeScreenBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="end"
+
+            android:src="@drawable/banner_img" />
+
+        <LinearLayout
+            android:id="@+id/llViewAllText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="12dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Used Services"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFragmentHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_most_used_services"
+            tools:itemCount="2"
+            />
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:src="@drawable/tap_icon"
+                    android:background="@drawable/services_icon_border"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plumbing"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:src="@drawable/drill_icon"
+                    android:background="@drawable/services_icon_border"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repairing"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:src="@drawable/electricity_icon"
+                    android:background="@drawable/services_icon_border"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electrical"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:src="@drawable/broom_icon"
+                    android:background="@drawable/services_icon_border"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cleaning"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               android:padding="17dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:src="@drawable/swa_icon"
+                    android:background="@drawable/services_icon_border"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carpentary"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:src="@drawable/paint_icon"
+                    android:background="@drawable/services_icon_border"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Painting"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:src="@drawable/backpack_icon"
+                    android:background="@drawable/services_icon_border"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movers"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:src="@drawable/workers_icon"
+                    android:background="@drawable/services_icon_border"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Handy"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/llViewPopularServciesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="12dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Popular Services"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFragmentHomePujaServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_most_used_services"
+            tools:itemCount="2"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
